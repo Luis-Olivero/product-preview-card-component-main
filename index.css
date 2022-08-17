@@ -1,0 +1,151 @@
+:root {
+    /* Colors */
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    /* Fonts */
+    --Monsterrat: 'Montserrat', sans-serif;
+    --Fraunces: 'Fraunces', serif;
+
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+image {
+    max-width: 100%;
+}
+
+body {
+    background-color: var(--Cream);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+
+
+}
+
+.card {
+    background-color: var(--White);
+    margin: auto;
+    width: 90%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.chanel img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.card__body {
+    padding: 1.5em;
+    width: 100%;
+}
+
+.card__text--subtitle {
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    color: var(--Dark-grayish-blue);
+    font-family: var(--Monsterrat);
+    font-size: 1em;
+}
+
+.card__text--title {
+    font-family: var(--Fraunces);
+}
+
+.card__text p {
+    color: var(--Dark-grayish-blue);
+    font-family: var(--Monsterrat);
+
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.price__new {
+    color: var(--Dark-cyan);
+    font-family: var(--Fraunces);
+    padding-right: .5em;
+}
+
+.price__original {
+    color: var(--Dark-grayish-blue);
+    font-family: var(--Monsterrat);
+    font-size: .9em;
+    text-decoration: line-through;
+}
+
+.btn {
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    font-family: var(--Monsterrat);
+    font-weight: 700;
+    width: 100%;
+    padding: 1em;
+    border: none;
+    border-radius: 3px;
+}
+
+.icon-cart {
+    color: var(--White);
+}
+
+footer {
+    width: 100%;
+}
+
+.attribution {
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--Dark-cyan);
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--Dark-cyan);
+}
+
+.attribution a:hover {
+    color: var(--Very-dark-blue);
+}
+
+.attribution a:visited {
+    color: var(--Dark-grayish-blue);
+}
+
+@media (min-width: 650px) {
+
+    .container {
+        padding-top: 10em;
+        width: 50%;
+    }
+
+    .card {
+        display: flex;
+        width: 100%;
+    }
+
+    .chanel img {
+        border-radius: 10px 0 0 10px;
+        height: 100%;
+    }
+
+
+
+}
