@@ -45,6 +45,7 @@ body {
 
 .chanel img {
     border-radius: 10px 10px 0 0;
+    object-fit: cover;
     width: 100%;
 }
 
@@ -98,10 +99,12 @@ body {
     padding: 1em;
     border: none;
     border-radius: 3px;
+    display: flex;
+    justify-content: center;
 }
 
 .icon-cart {
-    color: var(--White);
+    padding-right: 1em;
 }
 
 footer {
@@ -133,7 +136,7 @@ footer {
 
     .container {
         padding-top: 10em;
-        width: 50%;
+        max-width: 600px;
     }
 
     .card {
