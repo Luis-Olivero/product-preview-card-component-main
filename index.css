@@ -26,6 +26,10 @@ image {
 
 body {
     background-color: var(--Cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .container {
@@ -135,7 +139,6 @@ footer {
 @media (min-width: 650px) {
 
     .container {
-        padding-top: 10em;
         max-width: 600px;
     }
 
